@@ -16,6 +16,7 @@ export class ProductosService {
   private CARTERA_IMAGENES='img';
   private productosCollections:AngularFirestoreCollection<ProductosModel>
 
+  
   constructor(private db:AngularFirestore) { 
     this.productosCollections=db.collection<ProductosModel>('productos')
   }
